@@ -11,6 +11,7 @@ import {
   Title,
   Wrapper,
 } from "../component/auth-components";
+import GithubBtn from "../component/github-btn";
 
 function CreateAccount() {
   const [isLoading, setLoading] = useState(false);
@@ -99,6 +100,7 @@ function CreateAccount() {
         <Switcher>
           이미 계정이 있으신가요? <Link to="/login">로그인 &rarr;</Link>
         </Switcher>
+        <GithubBtn />
       </Wrapper>
     </>
   );
